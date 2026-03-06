@@ -40,3 +40,16 @@ header
     }
   }
 }
+
+main
+{
+  background-image: url('/background.jpg');
+  padding: 2rem 0;
+}
+
+.container
+{
+  width: 70%;
+  max-width: 1176px;
+  margin: auto
+}
