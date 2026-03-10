@@ -13,7 +13,6 @@ export default function AppCard({ title, image, time, type }){
           <h3>{title}</h3>
           <div>Type: {type}</div>
           <div>Time: {time}</div>
-
         </div>
       </div>
     </div>

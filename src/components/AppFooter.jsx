@@ -2,65 +2,8 @@ import AppLogo from "./AppLogo"
 
 //import molisanaLogo from '/logo.png'
 
-export default function AppFooter() {
+export default function AppFooter({slogan, products, pastificio}) {
 
-
-  const pastificio = [
-    {
-      id: 1,
-      text: 'il pastificio',
-      url: '#'
-    },
-    {
-      id: 2,
-      text: 'il pastificio',
-      url: '#'
-    },
-    {
-      id: 3,
-      text: 'il pastificio',
-      url: '#'
-    },
-    {
-      id: 4,
-      text: 'il pastificio',
-      url: '#'
-    },
-    {
-      id: 5,
-      text: 'il pastificio',
-      url: '#'
-    }
-  ]
-
-
-  const products = [
-    {
-      id: 1,
-      text: 'Pasta 1',
-      url: '#'
-    },
-    {
-      id: 2,
-      text: 'Pasta 2',
-      url: '#'
-    },
-    {
-      id: 3,
-      text: 'Pasta 3',
-      url: '#'
-    },
-    {
-      id: 4,
-      text: 'il pastificio',
-      url: '#'
-    },
-    {
-      id: 5,
-      text: 'il pastificio',
-      url: '#'
-    }
-  ]
 
   return (
 
@@ -69,7 +12,7 @@ export default function AppFooter() {
       <div className="container">
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
           <div className="col">
-            <AppLogo />
+            <AppLogo slogan={slogan} />
 
           </div>
           <div className="col">

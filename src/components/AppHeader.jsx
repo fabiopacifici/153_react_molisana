@@ -4,37 +4,11 @@
 // Relative path (based on the file position)
 //import reactLogo from '../assets/react.svg'
 import AppLogo from './AppLogo'
-export default function AppHeader() {
+export default function AppHeader({links}) {
 
   // 👇 Your js logic could live here 
   // const page_title = 'La molisana'
 
-  const links = [
-    {
-      id: 1,
-      text: 'Home',
-      url: '/home',
-      current: false
-    },
-    {
-      id: 2,
-      text: 'Prodotti',
-      url: '/prodotti',
-      current: true
-    },
-    {
-      id: 3,
-      text: 'Chi siamo',
-      url: '#',
-      current: false
-    },
-    {
-      id: 4,
-      text: 'Contatti',
-      url: '#',
-      current: false
-    }
-  ]
 
   // 👇 Markup jsx (quello che vedi in pagina)
   return (

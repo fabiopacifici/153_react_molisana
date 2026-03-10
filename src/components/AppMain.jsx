@@ -1,92 +1,7 @@
+import AppAlert from "./AppAlert";
 import AppCard from "./AppCard";
-export default function AppMain() {
+export default function AppMain({products}) {
 
-  const products = [
-    {
-      id: 1,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/04/1-spaghetto-quadrato.jpg",
-      title: "N.4 Spaghetto Quadrato Bucato",
-      type: "lunga",
-      time: 6,
-    },
-    {
-      id: 2,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/04/5-fettuccine.jpg",
-      title: "N.5 Fettuccine",
-      type: "lunga",
-      time: 13,
-    },
-    {
-      id: 3,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/04/6-linguine.jpg",
-      title: "N.6 Linguine",
-      type: "lunga",
-      time: 12,
-    },
-    {
-      id: 4,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/04/7-mezze-linguine.jpg",
-      title: "N.7 Mezze Linguine",
-      type: "lunga",
-      time: 11,
-    },
-    {
-      id: 5,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/04/11-spaghettino-quadrato.jpg",
-      title: "n.11 Spaghettino Quadrato",
-      type: "lunga",
-      time: 9,
-    },
-    {
-      id: 6,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/05/38-mezze-maniche.jpg",
-      title: "N.38 Mezze maniche",
-      type: "corta",
-      time: 12,
-    },
-    {
-      id: 7,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/05/44-sedani.jpg",
-      title: "N.44 Sedani",
-      type: "corta",
-      time: 8,
-    },
-    {
-      id: 8,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/05/49-sedani.jpg",
-      title: "N.49 Sedanini",
-      type: "corta",
-      time: 8,
-    },
-    {
-      id: 9,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/05/53-lumachine.jpg",
-      title: "N.53 Lumachine",
-      type: "corta",
-      time: 12,
-    },
-    {
-      id: 10,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/05/55-chifferi-rigati.jpg",
-      title: "N.55 Chifferi rigati",
-      type: "corta",
-      time: 12,
-    },
-    {
-      id: 11,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/05/58-misto-corto.jpg",
-      title: "N.58 Misto corto",
-      type: "corta",
-      time: 9,
-    },
-    {
-      id: 12,
-      src: "https://www.lamolisana.it/wp-content/uploads/2021/06/84-ditale-quadrato.jpg",
-      title: "N.84 Ditale Quadrato",
-      type: "cortissima",
-      time: 12,
-    },
-  ];
 
 
 
@@ -98,34 +13,30 @@ export default function AppMain() {
     <main>
       <div className="container">
 
+{/*         <AppAlert type={'primary'}>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam amet est pariatur voluptatem voluptates id quidem aut, deserunt tempora perspiciatis provident soluta sapiente ducimus obcaecati recusandae quae autem tempore quo.
+          </p>
+        </AppAlert> */}
+
+        <AppAlert content={'This is another alert'} type={'danger'}>
+          <ul>
+            <li>Erroro1</li>
+            <li>Erroro1</li>
+            <li>Erroro1</li>
+
+          </ul>
+        </AppAlert>
+
+
+
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
 
-
-          {/*  <AppCard title='Rigatone buono buono' image='https://www.lamolisana.it/wp-content/uploads/2021/04/1-spaghetto-quadrato.jpg' />
-
-
-          <AppCard title='Penna buona' image='https://www.lamolisana.it/wp-content/uploads/2021/04/7-mezze-linguine.jpg' /> */}
-          {/* <AppCard  title={product.title} image={product.src}  time={product.time} type={product.type} key={product.id}/> */}
-
-          {/* <AppCard product={product} key={product.id} /> */}
-
-
-          {/* 
-          
-           {
-              id: 12,
-              image: "https://www.lamolisana.it/wp-content/uploads/2021/06/84-ditale-quadrato.jpg",
-              name: "N.84 Ditale Quadrato",
-              pasta_type: "cortissima",
-              cooking_time: 12,
-            },
-          */}
           {
             products.map(product => (
 
 
               <AppCard title={product.title} image={product.src} time={product.time} type={product.type} key={product.id} />
-
 
             ))
           }
