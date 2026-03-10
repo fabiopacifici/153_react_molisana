@@ -1,9 +1,9 @@
 
-import molisanaLogo from '/logo.png'
+
 
 // Relative path (based on the file position)
-import reactLogo from '../assets/react.svg'
-
+//import reactLogo from '../assets/react.svg'
+import AppLogo from './AppLogo'
 export default function AppHeader() {
 
   // 👇 Your js logic could live here 
@@ -39,7 +39,8 @@ export default function AppHeader() {
   // 👇 Markup jsx (quello che vedi in pagina)
   return (
     <header>
-      <img src={molisanaLogo} alt="" />
+     
+      <AppLogo />
 
       <nav>
 

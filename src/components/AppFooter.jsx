@@ -1,4 +1,6 @@
-import molisanaLogo from '/logo.png'
+import AppLogo from "./AppLogo"
+
+//import molisanaLogo from '/logo.png'
 
 export default function AppFooter() {
 
@@ -67,7 +69,8 @@ export default function AppFooter() {
       <div className="container">
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
           <div className="col">
-            <img src={molisanaLogo} alt="" />
+            <AppLogo />
+
           </div>
           <div className="col">
             <h3 className='text-uppercase'>Pastificio</h3>
