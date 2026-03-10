@@ -1,4 +1,4 @@
-
+import AppCard from "./AppCard";
 export default function AppMain() {
 
   const products = [
@@ -100,17 +100,32 @@ export default function AppMain() {
 
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
 
+
+          {/*  <AppCard title='Rigatone buono buono' image='https://www.lamolisana.it/wp-content/uploads/2021/04/1-spaghetto-quadrato.jpg' />
+
+
+          <AppCard title='Penna buona' image='https://www.lamolisana.it/wp-content/uploads/2021/04/7-mezze-linguine.jpg' /> */}
+          {/* <AppCard  title={product.title} image={product.src}  time={product.time} type={product.type} key={product.id}/> */}
+
+          {/* <AppCard product={product} key={product.id} /> */}
+
+
+          {/* 
+          
+           {
+              id: 12,
+              image: "https://www.lamolisana.it/wp-content/uploads/2021/06/84-ditale-quadrato.jpg",
+              name: "N.84 Ditale Quadrato",
+              pasta_type: "cortissima",
+              cooking_time: 12,
+            },
+          */}
           {
             products.map(product => (
 
-              <div className="col" key={product.id}>
-                <div className="card rounded-0 h-100">
-                  <img className="card-img-top" src={product.src} alt='' />
-                  <div className="card-body">
-                    <h3>{product.title}</h3>
-                  </div>
-                </div>
-              </div>
+
+              <AppCard title={product.title} image={product.src} time={product.time} type={product.type} key={product.id} />
+
 
             ))
           }
